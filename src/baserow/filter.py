@@ -121,8 +121,8 @@ class Column:
   def link_row_has_not(self, value: int) -> Filter:
     return Filter(self._name, FilterMode.link_row_has_not, value)
 
-  # def boolean(self, value: ValueType) -> Filter:
-  #   return Filter(self._name, FilterMode.boolean, value)
+  def boolean(self, value: ValueType) -> Filter:
+    return Filter(self._name, FilterMode.boolean, value)
 
   def empty(self) -> Filter:
     return Filter(self._name, FilterMode.empty, None)

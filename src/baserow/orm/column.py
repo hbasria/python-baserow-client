@@ -1,6 +1,5 @@
 
 import typing as t
-import uuid
 
 from ..filter import Column as _Column, ValueType
 
@@ -49,7 +48,7 @@ class Column(_Column):
 
     assert isinstance(user_name, str)
     # We later replace references to this ID in #Filter objects with the actual internal field ID.
-    super().__init__(user_name + '.' + str(uuid.uuid4()))
+    super().__init__(user_name)
     self._user_name = user_name
 
   def __repr__(self) -> str:

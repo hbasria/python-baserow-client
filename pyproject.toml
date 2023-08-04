@@ -20,7 +20,7 @@ Homepage = "https://github.com/NiklasRosenstein/python-baserow-client"
 # Repository = ""
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 requests = "^2.26.0"
 "databind.core" = "^4.2.5"
 "databind.json" = "^4.2.5"
